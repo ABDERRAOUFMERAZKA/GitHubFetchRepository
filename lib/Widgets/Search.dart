@@ -11,9 +11,9 @@ class _SearchBarState extends State<SearchBar> {
   final _searchController = TextEditingController();
 
   void _handleSearch(BuildContext ctx) {
-      Provider.of<ListReposProvider>(ctx, listen: false)
-          .getListRepos(_searchController.text)
-          .then((_) => {});
+    Provider.of<ListReposProvider>(ctx, listen: false)
+        .getListRepos(_searchController.text)
+        .then((_) => {});
   }
 
   @override

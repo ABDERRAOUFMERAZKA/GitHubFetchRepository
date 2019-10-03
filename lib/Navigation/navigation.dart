@@ -1,6 +1,5 @@
-import 'package:dynamic_list/Screens/contactScreen.dart';
 import 'package:flutter/material.dart';
-import '../screens/homeScreen.dart';
+import '../Screens/homeScreen.dart';
 import '../Screens/contactScreen.dart';
 
 class Tabs extends StatefulWidget {
@@ -35,7 +34,7 @@ class _TabsState extends State<Tabs> {
   Widget build(BuildContext context) {
     final AppBar appBar = AppBar(
       title: Text(_listTabsbar[_indexTabsbar]['title'],
-        style: TextStyle(color: Colors.white)),
+          style: TextStyle(color: Colors.white)),
     );
     return Scaffold(
       appBar: appBar,
