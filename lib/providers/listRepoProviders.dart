@@ -22,6 +22,8 @@ class ListReposProvider with ChangeNotifier {
           id: e['id'],
           name: e['name'],
           description: e['description'],
+          url: e['html_url'],
+          language: e['language']
         ));
       });
       _listRepos = result;
